@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.films-container {
+  height: 600px;
+}
+
+#submit::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.film-img {
+  height: 400px;
+}
+
+.card-content {
+  height: 200px;
+}
+
+.detail {
+  bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none;
+  }
+  .video-button {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .video-button {
+    display: none;
+  }
+}
+
+.film-img {
+  height: 400px;
+}
+
+.video-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.modal-content{
+  height: fit-content;
+  width: fit-content;
+}
