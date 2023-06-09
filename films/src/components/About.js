@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Collapsible, CollapsibleItem, Icon } from "react-materialize";
+import { ThemeContext } from "./ThemeContext";
 export default function About() {
   return (
     <Collapsible accordion popout>

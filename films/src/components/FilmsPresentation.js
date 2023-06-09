@@ -17,6 +17,7 @@ export default function FilmsPresentation({ films }) {
                 <div className="center-align detail">
                   <Link
                     to={`/detail/${film.id}`}
+                    {...window.scrollTo(0, 0)}
                     className="btn waves-effect waves-light"
                   >
                     Detail

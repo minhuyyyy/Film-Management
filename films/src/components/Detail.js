@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Icon } from "react-materialize";
 import ModalCase from "./ModalCase";
-import { Link } from "react-router-dom";
 
 export default function Detail({ film }) {
   const [isMobile, setIsMobile] = useState(false);

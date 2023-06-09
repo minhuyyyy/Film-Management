@@ -9,7 +9,7 @@ export default function NewsPage() {
       {Films.map((film) => (
         <div key={film.id} className="news-article">
           <img src={film.img} alt={film.title} className="article-image" />
-          <div className="article-details">
+          <div className="article-details" style={{paddingBottom:'30px'}}>
             <h3>{film.title}</h3>
             <p>
               <strong>Year:</strong> {film.year}

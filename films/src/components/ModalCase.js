@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function ModalCase({ setShowModal, film }) {
   const handleClose = () => {
@@ -15,15 +15,15 @@ export default function ModalCase({ setShowModal, film }) {
         <div className="modal-content">
           <h4>Video for {film.title}</h4>
           <iframe
-            
             width="fit-content"
             height="fit-content"
             src={film.videoURL}
             title={film.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen; playback"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             webkit-playsinline="true"
             playsInline
+            loading="lazy"
           ></iframe>
         </div>
         <div className="modal-footer">
