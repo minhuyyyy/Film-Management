@@ -9,7 +9,7 @@ import Navbar from "./components/Navigation";
 import Detail from "./components/Detail";
 import { Films } from "./components/ListOfFilms";
 import Footer from "./components/Footer";
-import { ThemeContext } from "./components/ThemeContext";
+
 function App() {
   return (
     <div className="App">

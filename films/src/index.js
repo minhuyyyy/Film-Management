@@ -7,13 +7,16 @@ import { BrowserRouter } from 'react-router-dom';
 import M from 'materialize-css'
 import 'materialize-css/dist/css/materialize.min.css'
 import { ThemeProvider } from './components/ThemeContext';
-
+import store from "./redux/store"
+import { Provider } from 'react-redux';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     <ThemeProvider>
+      <Provider store={store}>
     <App />
+    </Provider>
     </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
